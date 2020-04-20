@@ -12,33 +12,33 @@ class Directory extends React.Component {
                     title: 'furniture',
                     imageUrl: 'https://7-xillow.s3-us-west-1.amazonaws.com/furniture.jpg',
                     id: 1,
-                    linkUrl: 'shop/hats'
+                    linkUrl: 'shop/furniture'
                   },
                   {
                     title: 'decor',
                     imageUrl: 'https://7-xillow.s3-us-west-1.amazonaws.com/decor.jpg',
                     id: 2,
-                    linkUrl: 'shop/jackets'
+                    linkUrl: 'shop/decor'
                   },
                   {
                     title: 'rugs',
                     imageUrl: 'https://7-xillow.s3-us-west-1.amazonaws.com/rugs.jpg',
                     id: 3,
-                    linkUrl: 'shop/sneakers'
+                    linkUrl: 'shop/rugs'
                   },
                   {
-                    title: 'Indoor',
+                    title: 'indoor',
                     imageUrl: 'https://7-xillow.s3-us-west-1.amazonaws.com/indoor.jpg',
                     size: 'large',
                     id: 4,
-                    linkUrl: 'shop/womens'
+                    linkUrl: 'shop/indoor'
                   },
                   {
-                    title: 'Outdoor',
+                    title: 'outdoor',
                     imageUrl: 'https://7-xillow.s3-us-west-1.amazonaws.com/outdoor.jpg',
                     size: 'large',
                     id: 5,
-                    linkUrl: 'shop/mens'
+                    linkUrl: 'shop/outdoor'
                   }
             ]
         }
@@ -47,8 +47,8 @@ class Directory extends React.Component {
         return (
             <div className= 'directory-menu'>
                 {
-                    this.state.sections.map(({title, imageUrl, id, size}) => (
-                        <MenuItem key = {id} title = {title} imageUrl = {imageUrl} size = {size}/>
+                    this.state.sections.map(({id, ...otherSectionProps}) => (
+                        <MenuItem key = {id} {...otherSectionProps}/>
                     ))
                 }
             </div>
