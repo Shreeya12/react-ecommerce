@@ -9,10 +9,10 @@ class Directory extends React.Component {
         this.state = {
             sections: [
                 {
-                    title: 'furniture',
+                    title: 'lights',
                     imageUrl: 'https://7-xillow.s3-us-west-1.amazonaws.com/furniture.jpg',
                     id: 1,
-                    linkUrl: 'shop/furniture'
+                    linkUrl: 'shop/lights'
                   },
                   {
                     title: 'decor',
@@ -27,18 +27,18 @@ class Directory extends React.Component {
                     linkUrl: 'shop/rugs'
                   },
                   {
-                    title: 'indoor',
+                    title: 'beddings',
                     imageUrl: 'https://7-xillow.s3-us-west-1.amazonaws.com/indoor.jpg',
                     size: 'large',
                     id: 4,
-                    linkUrl: 'shop/indoor'
+                    linkUrl: 'shop/beddings'
                   },
                   {
-                    title: 'outdoor',
+                    title: 'patio',
                     imageUrl: 'https://7-xillow.s3-us-west-1.amazonaws.com/outdoor.jpg',
                     size: 'large',
                     id: 5,
-                    linkUrl: 'shop/outdoor'
+                    linkUrl: 'shop/patio'
                   }
             ]
         }
